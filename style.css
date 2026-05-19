@@ -4,11 +4,13 @@ body{background-color: skyblue;
   align-items: center;
   min-height: 100vh;
   font-family: 'Arial', sans-serif;
+  padding: 10px;
 }
 .display {
-  width: 400px;
+  width: 100%;
+  max-width: 500px;
   height: 50px;
-  background-color: white;
+  background-color: whitesmoke;
   border: 2px solid #ccc;
   border-radius: 5px;
   margin-bottom: 10px;
@@ -16,6 +18,8 @@ body{background-color: skyblue;
   padding: 10px;
   font-size: 24px;
   border-color: black;
+  box-sizing: border-box;
+  
 }
 .buttons {
   display: grid;
@@ -25,19 +29,88 @@ body{background-color: skyblue;
   background-color: black;
   border-style: double;
   border-width: 2px;
+  padding: 10px;
 }
 button {
   padding: 20px;
-  margin: 10px;
+  margin: 5px;
   font-size: 18px;
   border: none;
   border-radius: 5px;
   background-color: #f0f0f0;
   cursor: pointer;
+  transition: 0.2s;
+  min-height: 50px;
 }
+
+button:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .cal {
   background-color: whitesmoke;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 480px;
+  box-sizing: border-box;
+}
+
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .display {
+    height: 45px;
+    padding: 8px;
+    font-size: 20px;
+  }
+  
+  button {
+    padding: 15px;
+    margin: 4px;
+    font-size: 16px;
+    min-height: 45px;
+  }
+  
+  .cal {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 5px;
+  }
+  
+  .display {
+    height: 80px;
+    padding: 6px;
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  
+  button {
+    padding: 12px;
+    margin: 3px;
+    font-size: 14px;
+    min-height: 40px;
+  }
+  
+  .buttons {
+    gap: 8px;
+    padding: 8px;
+  }
+  
+  .cal {
+    padding: 12px;
+    border-radius: 8px;
+  }
+  
+  button:hover {
+    transform: scale(1.02);
+    background-color: ;
+  } 
 }
