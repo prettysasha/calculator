@@ -60,7 +60,7 @@ button:hover {
 }
 
 
-/* Mobile responsiveness */
+
 @media (max-width: 768px) {
   .display {
     height: 45px;
