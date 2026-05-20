@@ -44,9 +44,8 @@ button {
 }
 
 button:hover {
-  background-color: #e0e0e0;
-  transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: crimson;
+  
 }
 
 .cal {
@@ -61,56 +60,5 @@ button:hover {
 
 
 
-@media (max-width: 768px) {
-  .display {
-    height: 45px;
-    padding: 8px;
-    font-size: 20px;
-  }
-  
-  button {
-    padding: 15px;
-    margin: 4px;
-    font-size: 16px;
-    min-height: 45px;
-  }
-  
-  .cal {
-    padding: 15px;
-  }
-}
 
-@media (max-width: 480px) {
-  body {
-    padding: 5px;
-  }
-  
-  .display {
-    height: 80px;
-    padding: 6px;
-    font-size: 18px;
-    margin-bottom: 8px;
-  }
-  
-  button {
-    padding: 12px;
-    margin: 3px;
-    font-size: 14px;
-    min-height: 40px;
-  }
-  
-  .buttons {
-    gap: 8px;
-    padding: 8px;
-  }
-  
-  .cal {
-    padding: 12px;
-    border-radius: 8px;
-  }
-  
-  button:hover {
-    transform: scale(1.02);
-    background-color: ;
-  } 
-}
+
